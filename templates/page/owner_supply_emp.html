@@ -1,0 +1,39 @@
+<style type="text/css">
+<!--
+.style2 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.style3 {font-size: 24px}
+-->
+</style>
+   <form  action="/owner_supply_emp" method="post" enctype="multipart/form-data" name="form1" id="form1">
+
+
+<table width="87%" height="162" border="0" align="center">
+  <tr>
+    <td height="68" colspan="13" bgcolor="#FFFFFF" class="tdsh"><div align="center" class="style2">User Employee  Details </div></td>
+    </tr>
+  <tr>
+    <td width="17%" bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Username </strong></h5></td>
+    <td width="19%" bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Contact</strong></h5></td>
+    <td width="21%" height="44" bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Number Of Employee </strong></h5></td>
+    <td width="20%" bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Work Details </strong></h5></td>
+    <td width="13%" bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Date</strong></h5></td>
+    
+    <td width="10%" bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Salary</strong></h5></td>
+  </tr>
+  {% for row in items %}
+  <tr>
+    <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[5] }}</div></td>
+    <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[6] }}</div></td>
+    <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[1] }}</div></td>
+	 <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[2] }}</div></td>
+	  <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[3] }}</div></td>
+	  
+	   <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[4] }}</div></td>
+
+  </tr>
+  {% endfor %}
+</table>
+</form>

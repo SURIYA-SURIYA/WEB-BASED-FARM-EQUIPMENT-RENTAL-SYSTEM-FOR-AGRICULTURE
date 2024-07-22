@@ -1,0 +1,31 @@
+<style type="text/css">
+<!--
+.style1 {font-size: 24px}
+-->
+</style>
+
+   <form  action="/admin_view_user" method="post" enctype="multipart/form-data" name="form1" id="form1">
+
+
+<table width="80%" height="115" border="0" align="center">
+  <tr>
+    <td colspan="7" bgcolor="#FFFFFF" class="tdsh"><div align="center" class="style1 style1">
+      <div align="center"><strong>Owner Details</strong></div>
+    </div></td>
+    </tr>
+  <tr>
+   
+    <td height="44" bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style6 style1">Name</h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style6 style1">Contact</h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style6 style1">Email</h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style6 style1">Address</h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style6 style1">Gender</h5></td>
+   <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style6 style1">Username</h5></td>
+   </tr>
+  {% for row in items %}
+  <tr> {% for d in row %}
+    <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ d }}</div></td>
+    {% endfor %}    </tr>
+  {% endfor %}
+</table>
+</form>

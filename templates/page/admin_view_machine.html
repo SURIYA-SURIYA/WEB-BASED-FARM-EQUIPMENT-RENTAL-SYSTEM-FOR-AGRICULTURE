@@ -1,0 +1,39 @@
+<style type="text/css">
+<!--
+.style1 {font-size: 24px}
+-->
+</style>
+<form  action="/admin_view_machine" method="post" name="form1" id="form1">
+
+   
+ 
+<table width="80%" height="115" border="0" align="center">
+  <tr>
+    <td colspan="8" bgcolor="#FFFFFF" class="tdsh"><div align="center" class="style1 style1">
+      <div align="center"><strong>Machine Details</strong></div>
+    </div></td>
+    </tr>
+  <tr>
+   
+    <td height="44" bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style6 style1">Machine Name </h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style6 style1">Type</h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style6 style1">Description</h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style6 style1">Days</h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style6 style1">Rental</h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style6 style1">Image</h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><div align="center"></div></td>
+  </tr>
+  {% for row in items %}
+  <tr> 
+    <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[1] }}</div></td>
+	<td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[2] }}</div></td>
+	<td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[3] }}</div></td>
+	<td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[4] }}</div></td>
+	<td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[5] }}</div></td>
+	<td class="tdsh" bgcolor="#FFFFFF" ><div align="center"><img src="static/uploads/{{ row[6] }}" width="50" height="50" /></div></td>
+	<td class="tdsh" bgcolor="#FFFFFF" >&nbsp;</td>
+    </tr>
+  {% endfor %}
+</table>
+</form>
+ 

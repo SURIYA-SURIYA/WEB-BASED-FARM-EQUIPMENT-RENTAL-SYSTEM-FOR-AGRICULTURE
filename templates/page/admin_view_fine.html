@@ -1,0 +1,43 @@
+<style type="text/css">
+<!--
+.style2 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.style3 {font-size: 24px}
+-->
+</style>
+   <form  action="/admin_view_fine" method="post" enctype="multipart/form-data" name="form1" id="form1">
+
+
+<table width="101%" height="115" border="0" align="center">
+  <tr>
+    <td colspan="11" bgcolor="#FFFFFF" class="tdsh"><div align="center" class="style2">Fine Details </div></td>
+    </tr>
+  <tr>
+   
+    <td height="44" bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Machine Name</strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Type</strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Username</strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Contact</strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Amount</strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Start date </strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>End Date </strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Fine Amount </strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh">&nbsp;</td>
+  </tr>
+  {% for row in items %}
+  <tr>  
+    <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[1] }}</div></td>
+	 <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[2] }}</div></td>
+	  <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[6] }}</div></td>
+	   <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[7] }}</div></td>
+	    <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[5] }}</div></td>
+	    <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[12] }}</div></td>
+	    <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[13] }}</div></td>
+	    <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[14] }}</div></td>
+	    <td class="tdsh" bgcolor="#FFFFFF" >&nbsp;</td>
+  </tr>
+  {% endfor %}
+</table>
+</form>

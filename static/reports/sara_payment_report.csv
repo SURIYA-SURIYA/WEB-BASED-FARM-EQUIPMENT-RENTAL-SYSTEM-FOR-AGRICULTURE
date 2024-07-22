@@ -1,0 +1,4 @@
+Machine Name,Type,Description,Days,Rental,Fine Amount,Status,Start Date,End Date
+tractor,vechile,Used to load the paddy,10,1200,0,Paid,sara123@gmail.com,2/ 30  north street chennai.
+truck,vechile,Used to load the paddy,10,10000,0,Accept,sara123@gmail.com,2/ 30  north street chennai.
+truck,vechile,Used to load the paddy,10,10000,0,Reject,sara123@gmail.com,2/ 30  north street chennai.

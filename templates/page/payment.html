@@ -1,0 +1,39 @@
+
+
+<form  action="/payment" method="post" enctype="multipart/form-data" name="form1" id="form1" onSubmit="return validateForm()">
+
+          
+          <h3 align="center" class="title-w3l mb-sm-3 text-center">Payment</h3>
+          <table width="334" height="203" align="center">
+    <tr>
+      <td><div align="left">Amount</div></td>
+      <td><div align="center">
+          <input name="amount" type="text" id="amount" value="{{ amount }}" readonly=""/>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">Card Number </div></td>
+      <td><div align="center">
+        <input name="cardno" type="text" id="cardno"   required="" />
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">Holder Name </div></td>
+      <td><div align="center">
+        <input name="holder_name" type="text" id="holder_name"   required="" />
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">Cvv</div></td>
+      <td><div align="center">
+        <input name="cvv" type="text" id="cvv"   required="" />
+      </div></td>
+    </tr>
+    <tr>
+      <td height="51" colspan="2"><div align="center"><span class="tp">
+          <input type="submit" name="btn" value="Pay" />
+      </span></div></td>
+    </tr>
+  </table>
+</form>
+ 

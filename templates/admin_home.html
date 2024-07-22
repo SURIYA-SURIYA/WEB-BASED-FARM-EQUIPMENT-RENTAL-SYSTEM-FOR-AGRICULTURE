@@ -1,0 +1,235 @@
+
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Jewel a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<style>
+	{% include 'css/bootstrap.css' %}
+	{% include 'css/style.css' %}
+	{% include 'css/prettyPhoto.css' %}
+	{% include 'css/owl.carousel.css' %}
+	{% include 'css/owl.theme.css' %}
+	{% include 'css/fontawesome-all.css' %}
+	</style>
+ 
+	<link href="//fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+</head>
+
+<body>
+	<!--Header-->
+
+	<header>
+		<div class="top-bar_sub_w3layouts_agile">
+		 
+			<div class="log">
+				 
+				 
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+
+		<div class="header_top" id="home">
+			<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+				    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					Farmer  Rental System</a>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+					{% include 'menu/adminmenu.html' %}
+						
+					</ul>
+
+				</div>
+				<div class="header-search-agileits-w3ls">
+				 
+				</div>
+			</nav>
+
+		</div>
+	</header>
+	<!--//header-->
+
+	<!--/banner-->
+	<div class="banner">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<div class="carousel-caption">
+						 
+					 
+					</div>
+				</div>
+			 
+			 
+			 
+			</div>
+			 
+		</div>
+	</div>
+	<!--/model-->
+	<!--//banner-->
+	<!--/banner-bottom-w3ls-agileinfo-->
+ 
+	<!---->
+	<!--//banner-->
+ 
+	<!--//app-->
+	<!--reviews_sec-->
+ 
+	<!---->
+
+
+	<!--footer-->
+	<footer>
+
+		<div class="instagram-posts">
+			 
+			<div class="footer-bottom-w3layouts-agileinfo">
+			  <!-- //subscribe -->
+              <!-- footer -->
+<div class="footer-cpy text-center">
+				  <div class="copyrightbottom-w3ls-agile">
+						<p>All Rights Reserved | Design by
+							<a href="#">Admin</a>
+						</p>
+
+		</div>
+	  </div>
+
+				<!-- //footer -->
+		  </div>
+		</div>
+	</footer>
+	<!---->
+	<!--/model-->
+	<!-- Modal --><!--//model-->
+	<!-- Modal -->
+    <!--//model-->
+    <!-- js -->
+<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<!-- //js -->
+	<!-- password-script -->
+	<script >
+		window.onload = function () {
+			document.getElementById("password1").onchange = validatePassword;
+			document.getElementById("password2").onchange = validatePassword;
+		}
+
+		function validatePassword() {
+			var pass2 = document.getElementById("password2").value;
+			var pass1 = document.getElementById("password1").value;
+			if (pass1 != pass2)
+				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+			else
+				document.getElementById("password2").setCustomValidity('');
+			//empty string means no validation error
+		}
+	</script>
+	<!-- //password-script -->
+	<!-- required-js-files-->
+	<!-- carousel -->
+	<script src="js/owl.carousel.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.owl-carousel').owlCarousel({
+				loop: true,
+				margin: 10,
+				responsiveClass: true,
+				responsive: {
+					0: {
+						items: 1,
+						nav: true
+					},
+					600: {
+						items: 1,
+						nav: false
+					},
+					900: {
+						items: 2,
+						nav: false
+					},
+					1000: {
+						items:5,
+						nav: true,
+						loop: false,
+						margin: 20
+					}
+				}
+			})
+		})
+	</script>
+	<!-- //carousel -->
+
+	<!--//required-js-files-->
+	<!-- start-smoth-scrolling -->
+	<script src="js/move-top.js"></script>
+	<script src="js/easing.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 900);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+
+	<script>
+		$(document).ready(function () {
+			/*
+									var defaults = {
+							  			containerID: 'toTop', // fading element id
+										containerHoverID: 'toTopHover', // fading element hover id
+										scrollSpeed: 1200,
+										easingType: 'linear' 
+							 		};
+									*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!-- Necessary-JS-File-For-Bootstrap -->
+	<!-- jQuery-Photo-filter-lightbox-Gallery-plugin -->
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/jquery.quicksand.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<!-- //jQuery-Photo-filter-lightbox-Gallery-plugin -->
+
+
+
+
+</body>
+
+</html>

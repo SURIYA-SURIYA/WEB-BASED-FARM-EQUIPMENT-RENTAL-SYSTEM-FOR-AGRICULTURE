@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generate Payment Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Generate Payment Report</h1>
+    <form action="/generate_report" method="get">
+        <button type="submit">Download Report</button>
+    </form>
+</body>
+</html>

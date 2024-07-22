@@ -1,0 +1,53 @@
+
+
+<form  action="/user_request_details" method="post" enctype="multipart/form-data" name="form1" id="form1" onSubmit="return validateForm()">
+
+          
+          <h3 align="center" class="title-w3l mb-sm-3 text-center">Add Machine </h3>
+          <table width="376" height="426" align="center">
+    <tr>
+      <td><div align="left">Machine Name </div></td>
+      <td><div align="center">
+        <input name="machine_name" type="text" id="machine_name"   required="" />
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">Type</div></td>
+      <td><div align="center">
+        <input name="type" type="text" id="type"   required="" />
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">Decription</div></td>
+      <td><div align="center">
+        <input name="description" type="text" id="description"   required="" />
+      </div></td>
+    </tr>
+    <tr>
+      <td height="56"><div align="left">Image</div></td>
+      <td><div align="center">
+        <label>
+        <input type="file" name="file" />
+        </label>
+      </div></td>
+    </tr>
+    <tr>
+      <td height="59"><div align="left">Rental</div></td>
+      <td><div align="center">
+        <input name="rental" type="text" id="rental"   required="" />
+      </div></td>
+    </tr>
+    <tr>
+      <td><div align="left">Rental Days </div></td>
+      <td><div align="center">
+        <input name="days" type="text" id="days"  required="" />
+      </div></td>
+    </tr>
+    <tr>
+      <td height="51" colspan="2"><div align="center"><span class="tp">
+          <input type="submit" name="btn" value="Add" />
+      </span></div></td>
+    </tr>
+  </table>
+</form>
+ 

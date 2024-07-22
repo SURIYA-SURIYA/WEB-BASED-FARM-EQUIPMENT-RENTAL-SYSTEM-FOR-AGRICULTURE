@@ -1,0 +1,44 @@
+<style type="text/css">
+<!--
+.style2 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.style3 {font-size: 24px}
+-->
+</style>
+   <form  action="/owner_accepted_details" method="post" enctype="multipart/form-data" name="form1" id="form1">
+
+
+<table width="80%" height="115" border="1" align="center">
+  <tr>
+    <td colspan="10" bgcolor="#FFFFFF" class="tdsh bg-success"><div align="center" class="style2">Rental Accepted Details </div></td>
+    
+  </tr>
+  <tr>
+   
+    <td height="44" bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Machine Name</strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Type</strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Description</strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Days</strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Amount</strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Start date </strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>End Date </strong></h5></td>
+  </tr>
+  {% for row in items %}
+  <tr>  
+    <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[1] }}</div></td>
+	 <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[2] }}</div></td>
+	  <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[3] }}</div></td>
+	   <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[4] }}</div></td>
+	    <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[5] }}</div></td>
+	    <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[12] }}</div></td>
+	    <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[13] }}</div></td>
+  </tr>
+  {% endfor %}
+</table>
+<div style="display:flex;justify-content:center; margin:10px;">
+  <a href="/download_accepted_requests" class="btn btn-primary align-center"style="">Get Report</a>
+</div>
+
+</form>

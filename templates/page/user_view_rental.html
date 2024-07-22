@@ -1,0 +1,46 @@
+<style type="text/css">
+<!--
+.style2 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.style3 {font-size: 24px}
+-->
+</style>
+   <form  action="/user_view_rental" method="post" enctype="multipart/form-data" name="form1" id="form1">
+
+
+<table width="80%" height="115" border="1" align="center">
+  <tr>
+  </tr>
+  <tr>
+    <td colspan="7" bgcolor="#FFFFFF" class="tdsh bg-success"><div align="center" class="style2">Rental Details </div></td>
+    
+    </tr>
+  <tr>
+   
+    <td height="44" bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Machine Name</strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Type</strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Description</strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Days</strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Amount</strong></h5></td>
+   <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6">Status</h5></td>
+   <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6">Report</h5></td>
+
+   </tr>
+  {% for item in items %}
+  <tr>  
+    <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ item[1] }}</div></td>
+	 <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ item[2] }}</div></td>
+	  <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ item[3] }}</div></td>
+	   <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ item[4] }}</div></td>
+	    <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ item[5] }}</div></td>
+		<td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ item[10] }}</div></td>
+    <td style="text-align:center;">
+      <a  href="{{ url_for('generate_paid_rentals_pdf') }}">Get Report</a>
+
+  </td>
+    </tr>
+  {% endfor %}
+</table>
+</form>
